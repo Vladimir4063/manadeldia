@@ -1,4 +1,29 @@
 body{
-    background-color: #F5ECB1;
+    background-color: #f9f4ef;
+}
+
+.container{
+    /* background-color:#fffffe; */
+    /* display: flex;
+    flex-wrap: wrap;  */
+    /*nowrap: esta por defecto, apreta los elementos en una linea*/
+    /* justify-content: center; */
+    /* flex-direction: column;  */
+    /*row: en fila*/
+    /* align-items: center; */
+    /* padding: 10px; */
+    /* border: 2px solid black; */
+}
+
+
+/* Estilo de div - cajas */
+.container .column .col{
+    /* background-color: red; */
+    /* width: 100px; */
+    margin: 10px;
+    /* text-align: center; */
+    /* line-height: 75px; */
+    /* font-size: 30px; */
+    /* border: 2px solid black; */
 }
 
