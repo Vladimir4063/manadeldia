@@ -1,127 +1,193 @@
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mana del día</title>
-    <link href="https://bootswatch.com/5/flatly/bootstrap.css" rel="stylesheet">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
 
-    <link rel="stylesheet" href="static/style.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mana del día</title>
+  <link href="https://bootswatch.com/5/flatly/bootstrap.css" rel="stylesheet">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="static/style.css">
 
-    <link rel="shortcut icon" href="static/img/moises.png" />
-  </head>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 
-
-  <body class="m-0 border-0 bd-example-row-flex-cols">
-
-    <div class="container text-center">
-
-      <div class="column align-items-center">
-
-        <!-- Image Moshe column -->
-        <div class="col">
-          <img src="static/img/moises.png" alt="moises-tablas" width="20%">
-        </div>
-
-        <!-- first audio column -->
-        <div class="col">
-          <audio controls autoplay>
-            <source src="static/audio/sonido_de_pajaros_ambiental.mp3" type="audio/mpeg">
-            Tu navegador no es compatible con el audio de HTML5
-          </audio>
-        </div>
-
-        <!-- column button explication -->
-        <div class="col">
-          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            ¿Por qué sonido ambiente?
-          </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <!-- <div class="modal-header">
-                  HEADER MODAL
-                </div> -->
-                <div class="modal-body">
-                  <h4 class="modal-title fs-5 mb-2" id="staticBackdropLabel">¡Por que es genial!🤭🤗</h4>
-                  <p>
-                    El estudiar con música o sonido de fondo proporciona beneficios. Estudios comprueban que estimula zonas del cerebro que están relacionadas con la atención, la concentración y la satisfacción. Cuando se estudia con música o sonido ambiente, uno se concentra más, siente que la información fluye más rápido y que los problemas son más fáciles de resolver.
-                  </p>
-                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok.. ¡gracias!</button>
-                </div>
-                <!-- <div class="modal-footer">
-                  
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
+  <link rel="shortcut icon" href="static/img/moises.png" />
+</head>
 
 
-        <!-- second column  -->
-        <div class="col">
-          <div class="card">
-            <div class="card-body" style="background-color:#fffffe">
-              <h4 class="card-title">Sexta Aliyá</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Levitico 23:33-44</h6>
-              <p class="card-text">🤗✨🎧
-              <br><br>
-              <strong> Fiesta de las Enramadas </strong><br>
-              El Señor le ordenó a Moisés que les dijera a los israelitas: «El día quince del mes séptimo comienza la fiesta de las Enramadas en honor al Señor, la cual durará siete días. El primer día se celebrará una fiesta solemne en honor al Señor. Ese día no harán ningún trabajo. Durante siete días le presentarán al Señor ofrendas por fuego. Al octavo día celebrarán una fiesta solemne en honor al Señor y volverán a presentarle ofrendas por fuego. Es una fiesta solemne; ese día no harán ningún trabajo. <br> <br>
+<body class="m-0 border-0 bd-example-row-flex-cols">
 
-              »Estas son las fiestas que el Señor ha establecido, y a las que ustedes habrán de convocar como fiestas solemnes en su honor, para presentarle ofrendas por fuego, holocaustos, ofrendas de cereal, y sacrificios y ofrendas de libación, tal como está prescrito para cada día. Todas estas fiestas son adicionales a los sábados del Señor y a los tributos y ofrendas votivas o voluntarias que ustedes le presenten. <br> <br>
+  <div class="container ">
 
-              »A partir del día quince del mes séptimo, luego de que hayan recogido los frutos de la tierra, celebrarán durante siete días la fiesta del Señor. El primer día y el octavo serán de descanso especial. El primer día tomarán frutos de los mejores árboles, ramas de palmera, de árboles frondosos y de sauces de los arroyos, y durante siete días se regocijarán en presencia del Señor su Dios. Cada año, durante siete días, celebrarán esta fiesta en honor al Señor. La celebrarán en el mes séptimo. Este será un estatuto perpetuo para las generaciones venideras. Durante siete días vivirán bajo enramadas. Todos los israelitas nativos vivirán bajo enramadas, para que sus descendientes sepan que yo hice vivir así a los israelitas cuando los saqué de Egipto. Yo soy el Señor su Dios». <br> <br>
+    <div class="column align-items-center ">
 
-              Así anunció Moisés a los israelitas las fiestas establecidas por el Señor. <br>
-              </p>
-              <!-- <a href="#" class="card-link">Comentarios de la Torah</a> -->
-              <!-- <a href="#" class="card-link">Buscar más</a> -->
-            </div>
-          </div>
-        </div>
-
-        <!-- third column reflexion -->
-        <div class="col m-4">
-          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#leerReflexion">
-            Leer reflexión
-          </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="leerReflexion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="leerReflexionLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <!-- <div class="modal-header">
-                  HEADER MODAL
-                </div> -->
-                <div class="modal-body">
-                  <h4 class="modal-title fs-5 mb-2" id="staticBackdropLabel">Reflexión de la Sexta Aliyá</h4>
-                  <!-- <h6 class="modal-subtitle mb-2 text-muted">Levitico 19:15-32</h6> -->
-                  <!-- <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                  <p>Es recomendable que puedas reflexionar un tiempo en lo leído. <br> 
-                    Pero pronto encontrarás una reflexión muy útil en este lugar. <br>No dudes en volver. 🤗
-                  </p>
-                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Ok.. Volveré</button>
-                  <!-- <button type="button" class="btn btn-primary">Agradecer</button> -->
-                </div>
-                <!-- <div class="modal-footer">
-                  
-                </div> -->
-              </div>
-            </div>
-          </div>
-             
-        </div>
-
-      
+      <!-- Image Moshe column -->
+      <div class="col text-center">
+        <img src="static/img/moises.png" alt="moises-tablas" width="20%">
       </div>
-    </body>
-  </html>
+
+      <!-- first audio column -->
+      <div class="col text-center">
+        <audio controls autoplay>
+          <source src="static/audio/sonido_de_pajaros_ambiental.mp3" type="audio/mpeg">
+          Tu navegador no es compatible con el audio de HTML5
+        </audio>
+      </div>
+
+      <!-- column button explication -->
+      <div class="col text-center">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          ¿Por qué sonido ambiente?
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <!-- <div class="modal-header">
+                  HEADER MODAL
+                </div> -->
+              <div class="modal-body">
+                <h4 class="modal-title fs-5 mb-2" id="staticBackdropLabel">¡Por que es genial!🤭🤗</h4>
+                <p>
+                  El estudiar con música o sonido de fondo proporciona beneficios. Estudios comprueban que estimula
+                  zonas del cerebro que están relacionadas con la atención, la concentración y la satisfacción. Cuando
+                  se estudia con música o sonido ambiente, uno se concentra más, siente que la información fluye más
+                  rápido y que los problemas son más fáciles de resolver.
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok.. ¡gracias!</button>
+              </div>
+              <!-- <div class="modal-footer">
+                  
+                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- second column  -->
+      <div class="col">
+        <div class="card">
+          <div class="card-body" style="background-color:#fffffe">
+            <h4 class="card-title text-center">Séptima Aliyá</h4>
+            <h6 class="card-subtitle mb-2 text-muted text-center">Levitico 24:1-23 <br>🤗✨🎧</h6>
+            <p class="card-text ">
+              <br><strong> Iluminación del santuario </strong> <br>
+              24 El Señor le dijo a Moisés: 2 «Manda a los israelitas que te traigan aceite puro de olivas prensadas,
+              para la iluminación del santuario. Así las lámparas se mantendrán siempre encendidas. 3 Aarón preparará
+              las lámparas en la Tienda de reunión, fuera de la cortina del pacto, para que ardan delante del Señor toda
+              la noche. Este será un estatuto perpetuo para las generaciones venideras. 4 Las lámparas que están sobre
+              el candelabro de oro puro se mantendrán siempre encendidas delante del Señor. <br><br>
+
+              <strong>Los panes ofrecidos al Señor</strong> <br>
+              5 »Toma flor de harina y hornea doce tortas de pan. Cada torta debe pesar cuatro kilos. 6 Ponlas ante el
+              Señor sobre la mesa de oro puro, en dos hileras de seis tortas cada una. 7 En cada hilera pondrás incienso
+              puro. Así el pan será una ofrenda memorial presentada por fuego al Señor. 8 Este pan se dispondrá
+              regularmente ante el Señor todos los sábados. Este es un pacto perpetuo de los israelitas. 9 El pan les
+              pertenece a Aarón y a sus hijos, quienes lo comerán en un lugar santo. Es una parte sumamente sagrada de
+              las ofrendas que se presentan por fuego al Señor. Es un estatuto perpetuo». <br><br>
+
+              <strong> Lapidación de un blasfemo </strong> <br>
+              10 Entre los israelitas vivía un hombre, hijo de madre israelita y de padre egipcio. Y sucedió que un día
+              este hombre y un israelita iniciaron un pleito en el campamento. 11 Pero el hijo de la mujer israelita, al
+              lanzar una maldición, pronunció el nombre del Señor; así que se lo llevaron a Moisés. (El nombre de su
+              madre era Selomit hija de Dibrí, de la tribu de Dan). 12 Y lo pusieron bajo arresto hasta que el Señor les
+              dijera qué hacer con él. <br>
+
+              13 Entonces el Señor le dijo a Moisés: 14 «Saca al blasfemo fuera del campamento. Quienes lo hayan oído
+              impondrán las manos sobre su cabeza, y toda la asamblea lo apedreará. 15 Diles a los israelitas: “Todo el
+              que blasfeme contra su Dios sufrirá las consecuencias de su pecado”. 16 Además, todo el que pronuncie el
+              nombre del Señor al maldecir a su prójimo será condenado a muerte. Toda la asamblea lo apedreará. Sea
+              extranjero o nativo, si pronuncia el nombre del Señor al maldecir a su prójimo, será condenado a muerte.
+              <br><br>
+
+              <strong> La ley del talión </strong> <br>
+              17 »El que le quite la vida a otro ser humano será condenado a muerte. <br>
+
+              18 »El que le quite la vida a algún animal ajeno, reparará el daño con otro animal. <br>
+
+              19 »Al que lesione a su prójimo se le infligirá el mismo daño que haya causado: 20 fractura por fractura,
+              ojo por ojo, diente por diente. Sufrirá en carne propia el mismo daño que haya causado. <br>
+
+              21 »Todo el que mate un animal reparará el daño, pero el que mate a un hombre será condenado a muerte. 22
+              Una sola ley regirá, tanto para el nativo como para el extranjero. Yo soy el Señor su Dios». <br>
+
+              23 Moisés les comunicó todo esto a los israelitas, y ellos sacaron al blasfemo fuera del campamento, y
+              allí lo apedrearon. Los israelitas procedieron tal como el Señor se lo ordenó a Moisés. <br>
+            </p>
+            <!-- <a href="#" class="card-link">Comentarios de la Torah</a> -->
+            <!-- <a href="#" class="card-link">Buscar más</a> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- third column reflexion -->
+      <div class="col m-4 text-center">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#leerReflexion">
+          Leer reflexión
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="leerReflexion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="leerReflexionLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <!-- <div class="modal-header">
+                  HEADER MODAL
+                </div> -->
+              <div class="modal-body">
+                <h4 class="modal-title fs-5 mb-2" id="staticBackdropLabel">Reflexión de la Séptima Aliyá</h4>
+                <h6 class="modal-subtitle mb-2 text-muted">Manda a los hijos de Israel que te traigan aceite puro de
+                  olivas machacadas para el alumbrado, para hacer arder la lámpara continuamente. Fuera del velo del
+                  testimonio, en la tienda de reunión, Aarón las dispondrá para que ardan desde el anochecer hasta la
+                  mañana delante del SEÑOR continuamente; será estatuto perpetuo para todas vuestras generaciones.
+                  Mantendrá las lámparas en orden en el candelabro de oro puro, continuamente delante del SEÑOR.
+                  (Lev. 24:2-4 LBLA)</h6>
+                <h3>¿Cómo se puede mantener las lámparas encendidas?</h3>
+                <!-- <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                <p>Aharón tenía que encender las lámparas del candelabro cada tarde de modo que ardieran durante toda la
+                  noche. Las lámparas no ardían durante el día, sólo durante la noche. Era importante cumplir con este servicio
+                  continuamente delante del Eterno y para eso necesitaban producir el aceite más puro de aceitunas machacadas, no molidas. El
+                  aceite de oliva era el combustible para el fuego que daba luz en el tabernáculo durante la noche. <br><br>
+
+                  En el templo personal también hay un candelabro interno. Lo que hace que pueda alumbrar es el Espíritu
+                  del Eterno. El aceite de oliva es símbolo del Espíritu. Para poder arder continuamente para el Eterno en su interior
+                  hace falta traer aceite, Espíritu. ¿Cómo se hace? <br><br>
+
+                  El aceite viene de la raíz del olivo. El olivo es el Israel celestial y la raíz es el Mesías. La raíz
+                  está en el cielo y desde allí se produce el aceite. Para poder obtener aceite para alumbrar en la oscuridad de este siglo
+                  presente - que cada vez se pondrá más oscuro - hay que ir a la fuente celestial y sacar aceite. Mediante la oración
+                  intensa y constante y el estudio diario de las Escrituras podemos obtener el aceite puro y así mantener nuestras lámparas
+                  encendidas todo el tiempo. <br><br>
+
+                  Querido discípulo del Mesías, no permitas que pase un solo día de tu vida sin tomar tiempo en oración
+                  y estudio de las Escrituras. Es bueno tener la costumbre de apartar como mínimo una hora diaria para ello. <br><br>
+
+                  Amado, ¡no descuides esto por nada! No permitas que falte aceite en tu lámpara. Escucha lo que digo: NO PERMITAS QUE
+                  FALTE ACEITE EN TU LAMPARA. Si no te cuidas podrá llegar un momento en la noche cuando no vas a tener ni poder obtener 
+                  aceite y así no podrías estar en las bodas en el reino venidero. Toma este mensaje en serio. Ora y estudia las
+                  Escrituras TODOS LOS DIAS de tu vida. Acuérdate de la parábola de las diez vírgenes (Mat. 25). <br><br>
+
+                </p>
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Gracias</button>
+                <!-- <button type="button" class="btn btn-primary">Agradecer</button> -->
+              </div>
+              <!-- <div class="modal-footer">
+                  
+                </div> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+</body>
+
+</html>
