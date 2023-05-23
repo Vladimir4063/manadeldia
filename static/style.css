@@ -1,5 +1,5 @@
 .container{
-    /* background-color:#fffffe; */
+    background-color:#fffffe;
     /* display: flex;
     flex-wrap: wrap;  */
     /*nowrap: esta por defecto, apreta los elementos en una linea*/
@@ -21,6 +21,11 @@
     /* line-height: 75px; */
     /* font-size: 30px; */
     /* border: 2px solid black; */
+}
+
+.card-text{
+  /* pre-wrap: permite cargar el texto con los espacios y saltos de linea por defecto */
+  white-space: pre-wrap
 }
 
 

@@ -1,33 +1,28 @@
 import time
 from flask import Flask, render_template
 from database.db import *
-
+from models.get_aliya import get_text_aliya
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def home():
+    data_list = get_text_aliya()
 
-    connection_DB =connection.cursor()
-    connection_DB.execute('SELECT nameParasha, aliya1 , aliya2  FROM parasha where nameParasha = "Bamidbar"')
-    print("GET")
+    nro_parasha = data_list[0]
+    name_parasha = data_list[1]
+    sign_parasha = data_list[2]
+    sect_aliya = data_list[3]
+    text_aliya = data_list[4]
 
-    data = connection_DB.fetchone()
-    data_list= list(data)
+    return render_template(
+        "index.html", 
+        nro_parasha = nro_parasha,
+        name_parasha = name_parasha,
+        sign_parasha = sign_parasha,
+        sect_aliya = sect_aliya,
+        text_aliya = text_aliya
+    )
 
-    print(data_list[2])
-
-
-    # data_list = list(data)
-
-    # print(type(data_list[0]))
-
-    # for data_l in data_list:
-    #     print(data_l)
-    time.sleep(3)
-
-
-    return render_template('index.html', data_list = data_list)
-
-if __name__ == '__main__':
-    app.run()
+if __name__ == "__main__":
+    app.run(debug=True)

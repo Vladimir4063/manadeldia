@@ -1,12 +1,11 @@
 from datetime import datetime
 
 
-def get_day_aliya():
+def get_day_number():
     day_number = datetime.today().isoweekday() + 1
     day_aliya = "aliya" + str(day_number)
     print(day_aliya)
-    print(day_number)
-    return day_aliya
+    return day_number
 
 def get_day_name():
     day_name = datetime.today().strftime('%A')
