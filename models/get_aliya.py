@@ -8,6 +8,10 @@ def get_text_aliya():
     sect = "sect" + str(day)
     aliya = "aliya" + str(day)
 
+    if aliya == "aliya8":
+        aliya = "aliya1"
+        sect = "sect1"
+
     query = "SELECT nroParasha, nameParasha, signParasha, " + sect +", " + aliya +" FROM parasha WHERE id = id"
     connection_DB =connection.cursor()
     connection_DB.execute(query)

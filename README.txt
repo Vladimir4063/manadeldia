@@ -8,3 +8,6 @@ python index.py
 
 Iniciar App:
 flask run index.py
+
+link de streaming radio:
+https://freeuk28.listen2myradio.com/live.mp3?typeportmount=ice_7440_stream_738435899

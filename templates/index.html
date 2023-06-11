@@ -20,61 +20,109 @@
 
 <body class="m-0 border-0 bd-example-row-flex-cols">
 
-  <div class="container ">
+  <!-- nav navigation  -->
+  <!-- <div class="container container-nav">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded" aria-label="Twelfth navbar example">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
+          aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Centered nav only</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button class="btn btn-secundary dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div> -->
 
-    <div class="column align-items-center ">
+  <div class="container">
+
+    <div class="column">
 
       <!-- Image Moshe column -->
       <div class="col text-center">
         <img src="static/img/moises.png" alt="moises-tablas" width="20%">
       </div>
 
-      <!-- first audio column -->
-      <div class="col text-center">
-        <audio controls autoplay>
-          <source src="static/audio/sonido_de_pajaros_ambiental.mp3" type="audio/mpeg">
-          Tu navegador no es compatible con el audio de HTML5
-        </audio>
-      </div>
 
-      <!-- column button explication -->
-      <div class="col text-center">
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          ¿Por qué sonido ambiente?
-        </button>
 
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <!-- <div class="modal-header">
-                  HEADER MODAL
-                </div> -->
-              <div class="modal-body">
-                <h4 class="modal-title fs-5 mb-2" id="staticBackdropLabel">¡Por que es genial!🤭🤗</h4>
-                <p>
-                  El estudiar con música o sonido de fondo proporciona beneficios. Estudios comprueban que estimula
-                  zonas del cerebro que están relacionadas con la atención, la concentración y la satisfacción. Cuando
-                  se estudia con música o sonido ambiente, uno se concentra más, siente que la información fluye más
-                  rápido y que los problemas son más fáciles de resolver.
-                </p>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok.. ¡gracias!</button>
-              </div>
-              <!-- <div class="modal-footer">
-                  
-                </div> -->
+      <!-- column text solapas -->
+      <!-- <div class="container container-text">
+
+        <ul class="nav nav-tabs justify-content-center" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" data-bs-toggle="tab" href="#home" aria-selected="false" role="tab">Parasha</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="#profile" aria-selected="true" role="tab" tabindex="-1">Evangelios</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-bs-toggle="tab" href="#dropdown1" aria-selected="true" tabindex="-1" role="tab">Disabled</a>
+          </li>
+          <li class="nav-item dropup">
+            <a class="nav-link dropdown-toggle dropup" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">Fiestas</a>
+            <div class="dropdown-menu" style="">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
             </div>
+          </li>
+        </ul>
+        <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade active show" id="home" role="tabpanel">
+            <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth
+              master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh
+              dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum
+              iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel">
+            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore
+              velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui
+              photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo
+              nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+          </div>
+          <div class="tab-pane fade" id="dropdown1">
+            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack
+              lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore
+              carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred
+              pitchfork.</p>
+          </div>
+          <div class="tab-pane fade" id="dropdown2">
+            <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse
+              gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche
+              high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS
+              viral locavore cosby sweater.</p>
           </div>
         </div>
-      </div>
+      </div> -->
 
-
-      <!-- second column  -->
+      <!-- second column text -->
       <div class="col">
         <div class="card">
           <div class="card-body" style="background-color:#fffffe">
-            <h5  class="card-title text-center">Parasha {{nro_parasha}} </h5>
+            <h5 class="card-title text-center">Parasha {{nro_parasha}} </h5>
             <h5 class="card-title text-center">{{ name_parasha }} : {{ sign_parasha }} </h5>
             <h6 class="card-title text-center">{{ sect_aliya }}</h6>
             <h6 class="card-subtitle text-muted text-center"><br>🤗✨🎧</h6>
@@ -101,45 +149,68 @@
                 </div> -->
               <div class="modal-body">
                 <h4 class="modal-title fs-5 mb-2" id="staticBackdropLabel">Reflexión de la Cuarta Aliyá</h4>
-                <h6 class="modal-subtitle mb-2 ">Habla a los hijos de Israel, y diles: "El hombre o la mujer que haga un voto especial, el voto de nazareo, para
-                dedicarse al SEÑOR, se abstendrá de vino y licor; no beberá vinagre, ya sea de vino o de licor, tampoco beberá ningún
-                jugo de uva, ni comerá uvas frescas ni secas. Todos los días de su nazareato no comerá nada de lo que se hace de la vid,
-                desde las semillas hasta el hollejo. Durante todos los días del voto de su nazareato no pasará navaja sobre su cabeza.
-                Hasta que se cumplan los días por los cuales se apartó a sí mismo para el SEÑOR, será santo; dejará crecer las guedejas
-                del cabello de su cabeza.
-                (Núm. 6:2-5 LBLA)</h6> <br>
+                <h6 class="modal-subtitle mb-2 ">Habla a los hijos de Israel, y diles: "El hombre o la mujer que haga un
+                  voto especial, el voto de nazareo, para
+                  dedicarse al SEÑOR, se abstendrá de vino y licor; no beberá vinagre, ya sea de vino o de licor,
+                  tampoco beberá ningún
+                  jugo de uva, ni comerá uvas frescas ni secas. Todos los días de su nazareato no comerá nada de lo que
+                  se hace de la vid,
+                  desde las semillas hasta el hollejo. Durante todos los días del voto de su nazareato no pasará navaja
+                  sobre su cabeza.
+                  Hasta que se cumplan los días por los cuales se apartó a sí mismo para el SEÑOR, será santo; dejará
+                  crecer las guedejas
+                  del cabello de su cabeza.
+                  (Núm. 6:2-5 LBLA)</h6> <br>
                 <h4>¿Cómo un laico puede obtener la misma santidad que el sumo sacerdote?</h4> <br>
                 <!-- <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                <p>La palabra hebrea que ha sido traducida como “nazareato” es nezer – נזר – que significa abstención, separación,
-                dedicación, consagración, corona. La diadema santa que el sumo sacerdote usaba es llamada nezer hakodesh –נזר הקדש –
-                corona de santidad o diadema santa, como está escrito en Éxodo 39:30: “E hicieron la lámina de la diadema santa de oro
-                puro, y grabaron en ella como la grabadura de un sello: SANTIDAD AL SEÑOR.” (LBLA). <br><br>
-                
-                El nazir tiene una señal sobre su cabeza, de dejarse crecer el cabello, lo cual es una señal de ser apartado para
-                HaShem. Esto nos enseña que hay una relación entre el sumo sacerdote y el nazir por la señal de su consagración que está
-                sobre su cabeza. El nazir tiene la misma santidad que el sumo sacerdote. <br><br>
-                
-                Así que, cualquier persona, hombre o mujer dentro de Israel tiene la opción de dedicarse a HaShem y llegar al mismo
-                nivel de santidad que el sumo sacerdote. Evidentemente la santidad máxima no está reservada únicamente al sumo sacerdote
-                sino accesible para todo el que desea vivir en ese nivel de santidad, hombre o mujer. ¿Cuál es el camino? El sacrificio.
-                Y en este caso no es obligatorio sino voluntario. <br><br>
-                
-                Este principio podríamos aplicar también sobre los no judíos que desean vivir en un nivel de santidad superior a su
-                estado normal. Mediante una elección voluntaria de abstenciones diversas podrán expresar de una manera especial du
-                devoción al Eterno. El ayuno total o parcial, tiempos de oración extra, abstinencia sexual o de ciertas comidas
-                permitidas, son varias maneras de apartarse al Eterno. <br><br>
-                
-                Esta dedicación puede ser de carácter permanente, de por vida, como está expresado en Romanos 14:6 donde está escrito:
-                “El que guarda cierto día, para el Señor lo guarda; y el que come, para el Señor come, pues da gracias a Dios; y el que
-                no come, para el Señor se abstiene, y da gracias a Dios.” (LBLA) Esta dedicación también puede ser temporal como vemos
-                en 1 Corintios 7:5 donde está escrito: “No os privéis el uno del otro, excepto de común acuerdo y por cierto tiempo,
-                para dedicaros a la oración; volved después a juntaros a fin de que Satanás no os tiente por causa de vuestra falta de
-                dominio propio.” (LBLA) <br><br>
-                
-                El no judío que elige no comer animales que no le son prohibidos por causa del Eterno es santificado por su decisión, y
-                especialmente cuando se trata de aquellos animales que son prohibidos para los hijos de Israel. <br><br>
-                
-                Bendiciones. <br><br>
+                <p>La palabra hebrea que ha sido traducida como “nazareato” es nezer – נזר – que significa abstención,
+                  separación,
+                  dedicación, consagración, corona. La diadema santa que el sumo sacerdote usaba es llamada nezer
+                  hakodesh –נזר הקדש –
+                  corona de santidad o diadema santa, como está escrito en Éxodo 39:30: “E hicieron la lámina de la
+                  diadema santa de oro
+                  puro, y grabaron en ella como la grabadura de un sello: SANTIDAD AL SEÑOR.” (LBLA). <br><br>
+
+                  El nazir tiene una señal sobre su cabeza, de dejarse crecer el cabello, lo cual es una señal de ser
+                  apartado para
+                  HaShem. Esto nos enseña que hay una relación entre el sumo sacerdote y el nazir por la señal de su
+                  consagración que está
+                  sobre su cabeza. El nazir tiene la misma santidad que el sumo sacerdote. <br><br>
+
+                  Así que, cualquier persona, hombre o mujer dentro de Israel tiene la opción de dedicarse a HaShem y
+                  llegar al mismo
+                  nivel de santidad que el sumo sacerdote. Evidentemente la santidad máxima no está reservada únicamente
+                  al sumo sacerdote
+                  sino accesible para todo el que desea vivir en ese nivel de santidad, hombre o mujer. ¿Cuál es el
+                  camino? El sacrificio.
+                  Y en este caso no es obligatorio sino voluntario. <br><br>
+
+                  Este principio podríamos aplicar también sobre los no judíos que desean vivir en un nivel de santidad
+                  superior a su
+                  estado normal. Mediante una elección voluntaria de abstenciones diversas podrán expresar de una manera
+                  especial du
+                  devoción al Eterno. El ayuno total o parcial, tiempos de oración extra, abstinencia sexual o de
+                  ciertas comidas
+                  permitidas, son varias maneras de apartarse al Eterno. <br><br>
+
+                  Esta dedicación puede ser de carácter permanente, de por vida, como está expresado en Romanos 14:6
+                  donde está escrito:
+                  “El que guarda cierto día, para el Señor lo guarda; y el que come, para el Señor come, pues da gracias
+                  a Dios; y el que
+                  no come, para el Señor se abstiene, y da gracias a Dios.” (LBLA) Esta dedicación también puede ser
+                  temporal como vemos
+                  en 1 Corintios 7:5 donde está escrito: “No os privéis el uno del otro, excepto de común acuerdo y por
+                  cierto tiempo,
+                  para dedicaros a la oración; volved después a juntaros a fin de que Satanás no os tiente por causa de
+                  vuestra falta de
+                  dominio propio.” (LBLA) <br><br>
+
+                  El no judío que elige no comer animales que no le son prohibidos por causa del Eterno es santificado
+                  por su decisión, y
+                  especialmente cuando se trata de aquellos animales que son prohibidos para los hijos de Israel.
+                  <br><br>
+
+                  Bendiciones. <br><br>
 
                 </p>
                 <button type="button" class="btn btn-success" data-bs-dismiss="modal">Gracias</button>
@@ -151,11 +222,106 @@
             </div>
           </div>
         </div>
-
       </div>
 
+      <!-- first audio column -->
+      <div class="col text-center">
+        
+          <div class="card align-items-center">
+            <img class="align-items-center" src="/static/img/pajarito.jpg" alt="pajarito" style="width: 20%;">
+            <div class="card-body">
+              <audio controls>
+                <source src="static/audio/sonido_de_pajaros_ambiental.mp3" type="audio/mpeg">
+                Tu navegador no es compatible con el audio de HTML5
+              </audio>
+            </div>
+          </div>
+
+        <!-- <audio controls>
+          <source src="static/audio/sonido_de_pajaros_ambiental.mp3" type="audio/mpeg">
+          Tu navegador no es compatible con el audio de HTML5
+        </audio>
+
+        <audio controls>
+          <source src="static/audio/sonido_de_pajaros_ambiental.mp3" type="audio/mpeg">
+          Tu navegador no es compatible con el audio de HTML5
+        </audio>
+
+        <audio controls>
+          <source src="static/audio/sonido_de_pajaros_ambiental.mp3" type="audio/mpeg">
+          Tu navegador no es compatible con el audio de HTML5
+        </audio> -->
+      </div>
+      
+      <!-- column button explication song -->
+      <div class="col text-center">
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          ¿Por qué sonido ambiente?
+        </button>
+      
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <!-- <div class="modal-header">
+                        HEADER MODAL
+                      </div> -->
+              <div class="modal-body">
+                <h4 class="modal-title fs-5 mb-2" id="staticBackdropLabel">¡Por que es genial!🤭🤗</h4>
+                <p>
+                  El estudiar con música o sonido de fondo proporciona beneficios. Estudios comprueban que estimula
+                  zonas del cerebro que están relacionadas con la atención, la concentración y la satisfacción. Cuando
+                  se estudia con música o sonido ambiente, uno se concentra más, siente que la información fluye más
+                  rápido y que los problemas son más fáciles de resolver.
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok.. ¡gracias!</button>
+              </div>
+              <!-- <div class="modal-footer">
+                        
+                      </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra navegation -->
+
+      <div class="barra-navigation fixed-bottom">
+        <div class="container rounded" style="background: #fff;">
+          <div class="d-flex flex-wrap align-items-center justify-content-center ">
+            <ul class="nav col-12 col-lg-auto my-2 my-md-0 text-small flex-nowrap">
+              <li>
+                <a href="" class="nav-link">
+                  <span><ion-icon name="bonfire-outline"></ion-icon></span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="nav-link">
+                  <span><ion-icon name="calendar-outline"></ion-icon></span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="nav-link">
+                  <span><ion-icon name="headset-outline"></ion-icon></span>
+                </a>
+              </li>
+              <!-- <li>
+                <a href="" class="nav-link ">
+                  <span><ion-icon name="options-outline"></ion-icon></span>
+                </a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
 
     </div>
+  </div>
+
+  <!-- ion-icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

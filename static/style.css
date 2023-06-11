@@ -11,6 +11,9 @@
     /* border: 2px solid black; */
 }
 
+.container .column{
+  margin-bottom: 80px;
+}
 
 /* Estilo de div - cajas */
 .container .column .col{
@@ -28,6 +31,10 @@
   white-space: pre-wrap
 }
 
+.nav-link {
+    /* color: red; */
+    font-size: 30px;
+}
 
 @media only screen and (max-width: 600px) {
   img {
