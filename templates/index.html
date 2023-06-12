@@ -18,7 +18,7 @@
 </head>
 
 
-<body class="m-0 border-0 bd-example-row-flex-cols">
+<body class="m-0 border-0 bd-example-row-flex-cols" style="background: #FDFBEF;">
 
   <!-- nav navigation  -->
   <!-- <div class="container container-nav">
@@ -54,7 +54,7 @@
     </nav>
   </div> -->
 
-  <div class="container">
+  <div class="container" style="background: #FDFBEF;">
 
     <div class="column">
 
@@ -121,12 +121,12 @@
       <!-- second column text -->
       <div class="col">
         <div class="card">
-          <div class="card-body" style="background-color:#fffffe">
+          <div class="card-body" style="background-color:#FDFBEF">
             <h5 class="card-title text-center">Parasha {{nro_parasha}} </h5>
             <h5 class="card-title text-center">{{ name_parasha }} : {{ sign_parasha }} </h5>
             <h6 class="card-title text-center">{{ sect_aliya }}</h6>
             <h6 class="card-subtitle text-muted text-center"><br>🤗✨🎧</h6>
-            <p class="card-text ">{{ text_aliya }}</p>
+            <p class="card-text">{{ text_aliya }}</p>
             <!-- <a href="#" class="card-link">Comentarios de la Torah</a> -->
             <!-- <a href="#" class="card-link">Buscar más</a> -->
           </div>
@@ -135,7 +135,7 @@
 
       <!-- third column reflexion -->
       <div class="col m-4 text-center">
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#leerReflexion">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#leerReflexion">
           Leer reflexión
         </button>
 
@@ -255,7 +255,7 @@
       
       <!-- column button explication song -->
       <div class="col text-center">
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
           ¿Por qué sonido ambiente?
         </button>
       
@@ -286,23 +286,27 @@
       </div>
 
       <!-- Barra navegation -->
-
       <div class="barra-navigation fixed-bottom">
-        <div class="container rounded" style="background: #fff;">
+        <div class="container container-barra rounded-top" style="background: #EEE4C7;">
           <div class="d-flex flex-wrap align-items-center justify-content-center ">
-            <ul class="nav col-12 col-lg-auto my-2 my-md-0 text-small flex-nowrap">
+            <ul class="nav col-12 col-lg-auto my-2 my-md-0 text-small flex-nowrap justify-content-center">
               <li>
-                <a href="" class="nav-link">
+                <a href="" class="nav-link" style="color: #343a40">
+                  <span><ion-icon name="heart-outline"></ion-icon></span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="nav-link" style="color: #343a40">
                   <span><ion-icon name="bonfire-outline"></ion-icon></span>
                 </a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="" class="nav-link">
                   <span><ion-icon name="calendar-outline"></ion-icon></span>
                 </a>
-              </li>
+              </li> -->
               <li>
-                <a href="" class="nav-link">
+                <a href="" class="nav-link" style="color: #343a40">
                   <span><ion-icon name="headset-outline"></ion-icon></span>
                 </a>
               </li>
