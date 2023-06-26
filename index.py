@@ -24,5 +24,9 @@ def home():
         text_aliya = text_aliya
     )
 
+@app.route("/add_text")
+def add_texto():
+    return render_template("add_text.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
