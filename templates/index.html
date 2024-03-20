@@ -120,13 +120,13 @@
 
       <!-- second column text -->
       <div class="col">
-        <div class="card">
+        <div id="aliya-text" class="card">
           <div class="card-body" style="background-color:#FDFBEF">
             <h5 class="card-title text-center">Parasha {{nro_parasha}} </h5>
-            <h5 class="card-title text-center">{{ name_parasha }} : {{ sign_parasha }} </h5>
-            <h6 class="card-title text-center">{{ sect_aliya }}</h6>
-            <h6 class="card-subtitle text-muted text-center"><br>🤗✨🎧</h6>
-            <p class="card-text">{{ text_aliya }}</p>
+            <h4 class="card-title text-center">{{ name_parasha }} : {{ sign_parasha }} </h4>
+            <h6 class="card-title text-center">Aliyá {{ day }}, {{ sect_aliya }}</h6>
+            <h6 class="card-subtitle text-muted text-center"><br>✨</h6>
+            <p class="card-text default-text">{{ text_aliya }}</p>
             <!-- <a href="#" class="card-link">Comentarios de la Torah</a> -->
             <!-- <a href="#" class="card-link">Buscar más</a> -->
           </div>
@@ -134,10 +134,12 @@
       </div>
 
       <!-- third column reflexion -->
-      <div class="col m-4 text-center">
+      <div class="col m-4">
+        <div class="text-center">
         <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#leerReflexion">
           Leer reflexión
         </button>
+        </div>
 
         <!-- Modal -->
         <div class="modal fade" id="leerReflexion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -148,72 +150,16 @@
                   HEADER MODAL
                 </div> -->
               <div class="modal-body">
-                <h4 class="modal-title fs-5 mb-2" id="staticBackdropLabel">Reflexión de la Cuarta Aliyá</h4>
-                <h6 class="modal-subtitle mb-2 ">Habla a los hijos de Israel, y diles: "El hombre o la mujer que haga un
-                  voto especial, el voto de nazareo, para
-                  dedicarse al SEÑOR, se abstendrá de vino y licor; no beberá vinagre, ya sea de vino o de licor,
-                  tampoco beberá ningún
-                  jugo de uva, ni comerá uvas frescas ni secas. Todos los días de su nazareato no comerá nada de lo que
-                  se hace de la vid,
-                  desde las semillas hasta el hollejo. Durante todos los días del voto de su nazareato no pasará navaja
-                  sobre su cabeza.
-                  Hasta que se cumplan los días por los cuales se apartó a sí mismo para el SEÑOR, será santo; dejará
-                  crecer las guedejas
-                  del cabello de su cabeza.
-                  (Núm. 6:2-5 LBLA)</h6> <br>
-                <h4>¿Cómo un laico puede obtener la misma santidad que el sumo sacerdote?</h4> <br>
+                <h4 class="modal-title fs-5 mb-2 text-center" id="staticBackdropLabel"></h4>
+                <h6 class="modal-subtitle mb-2 text-center default-text"><em>{{ featured_verse }}</em></h6> <br>
+                <h4 class="text-center"><Strong>{{ title_reflection }}</Strong></h4> <br>
+
+                
                 <!-- <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button> -->
-                <p>La palabra hebrea que ha sido traducida como “nazareato” es nezer – נזר – que significa abstención,
-                  separación,
-                  dedicación, consagración, corona. La diadema santa que el sumo sacerdote usaba es llamada nezer
-                  hakodesh –נזר הקדש –
-                  corona de santidad o diadema santa, como está escrito en Éxodo 39:30: “E hicieron la lámina de la
-                  diadema santa de oro
-                  puro, y grabaron en ella como la grabadura de un sello: SANTIDAD AL SEÑOR.” (LBLA). <br><br>
-
-                  El nazir tiene una señal sobre su cabeza, de dejarse crecer el cabello, lo cual es una señal de ser
-                  apartado para
-                  HaShem. Esto nos enseña que hay una relación entre el sumo sacerdote y el nazir por la señal de su
-                  consagración que está
-                  sobre su cabeza. El nazir tiene la misma santidad que el sumo sacerdote. <br><br>
-
-                  Así que, cualquier persona, hombre o mujer dentro de Israel tiene la opción de dedicarse a HaShem y
-                  llegar al mismo
-                  nivel de santidad que el sumo sacerdote. Evidentemente la santidad máxima no está reservada únicamente
-                  al sumo sacerdote
-                  sino accesible para todo el que desea vivir en ese nivel de santidad, hombre o mujer. ¿Cuál es el
-                  camino? El sacrificio.
-                  Y en este caso no es obligatorio sino voluntario. <br><br>
-
-                  Este principio podríamos aplicar también sobre los no judíos que desean vivir en un nivel de santidad
-                  superior a su
-                  estado normal. Mediante una elección voluntaria de abstenciones diversas podrán expresar de una manera
-                  especial du
-                  devoción al Eterno. El ayuno total o parcial, tiempos de oración extra, abstinencia sexual o de
-                  ciertas comidas
-                  permitidas, son varias maneras de apartarse al Eterno. <br><br>
-
-                  Esta dedicación puede ser de carácter permanente, de por vida, como está expresado en Romanos 14:6
-                  donde está escrito:
-                  “El que guarda cierto día, para el Señor lo guarda; y el que come, para el Señor come, pues da gracias
-                  a Dios; y el que
-                  no come, para el Señor se abstiene, y da gracias a Dios.” (LBLA) Esta dedicación también puede ser
-                  temporal como vemos
-                  en 1 Corintios 7:5 donde está escrito: “No os privéis el uno del otro, excepto de común acuerdo y por
-                  cierto tiempo,
-                  para dedicaros a la oración; volved después a juntaros a fin de que Satanás no os tiente por causa de
-                  vuestra falta de
-                  dominio propio.” (LBLA) <br><br>
-
-                  El no judío que elige no comer animales que no le son prohibidos por causa del Eterno es santificado
-                  por su decisión, y
-                  especialmente cuando se trata de aquellos animales que son prohibidos para los hijos de Israel.
-                  <br><br>
-
-                  Bendiciones. <br><br>
-
-                </p>
-                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Gracias</button>
+                <p class="default-text">{{ text_reflection }}</p>
+                <div class="text-center">
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Gracias</button>
+                </div>
                 <!-- <button type="button" class="btn btn-primary">Agradecer</button> -->
               </div>
               <!-- <div class="modal-footer">
@@ -224,63 +170,36 @@
         </div>
       </div>
 
-      <!-- first audio column -->
-      <div class="col text-center">
-        
-          <div class="card align-items-center">
-            <img class="align-items-center" src="/static/img/pajarito.jpg" alt="pajarito" style="width: 20%;">
-            <div class="card-body">
-              <audio controls>
-                <source src="static/audio/sonido_de_pajaros_ambiental.mp3" type="audio/mpeg">
-                Tu navegador no es compatible con el audio de HTML5
-              </audio>
-            </div>
+      <!-- column  haftara text -->
+      <div class="col">
+        <div id="haftara-text" class="card">
+          <div class="card-body" style="background-color:#FDFBEF">
+            <h5 class="card-title text-center">Haftará</h5>
+            <h4 class="card-title text-center">{{ name_parasha }} : {{ sign_parasha }} </h4>
+            <h6 class="card-title text-center">{{ section_haftara }}</h6>
+            <h6 class="card-subtitle text-muted text-center"><br></h6>
+            <p class="card-text">{{ text_haftara }}</p>
+            <!-- <a href="#" class="card-link">Comentarios de la Torah</a> -->
+            <!-- <a href="#" class="card-link">Buscar más</a> -->
           </div>
-
-        <!-- <audio controls>
-          <source src="static/audio/sonido_de_pajaros_ambiental.mp3" type="audio/mpeg">
-          Tu navegador no es compatible con el audio de HTML5
-        </audio>
-
-        <audio controls>
-          <source src="static/audio/sonido_de_pajaros_ambiental.mp3" type="audio/mpeg">
-          Tu navegador no es compatible con el audio de HTML5
-        </audio>
-
-        <audio controls>
-          <source src="static/audio/sonido_de_pajaros_ambiental.mp3" type="audio/mpeg">
-          Tu navegador no es compatible con el audio de HTML5
-        </audio> -->
+        </div>
       </div>
-      
-      <!-- column button explication song -->
-      <div class="col text-center">
-        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-          ¿Por qué sonido ambiente?
-        </button>
-      
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <!-- <div class="modal-header">
-                        HEADER MODAL
-                      </div> -->
-              <div class="modal-body">
-                <h4 class="modal-title fs-5 mb-2" id="staticBackdropLabel">¡Por que es genial!🤭🤗</h4>
-                <p>
-                  El estudiar con música o sonido de fondo proporciona beneficios. Estudios comprueban que estimula
-                  zonas del cerebro que están relacionadas con la atención, la concentración y la satisfacción. Cuando
-                  se estudia con música o sonido ambiente, uno se concentra más, siente que la información fluye más
-                  rápido y que los problemas son más fáciles de resolver.
-                </p>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok.. ¡gracias!</button>
-              </div>
-              <!-- <div class="modal-footer">
-                        
-                      </div> -->
-            </div>
+
+      <!-- column  party info -->
+      <div class="col">
+        <div id="party-info" class="card">
+          <div class="card-body" style="background-color:#FDFBEF">
+            <h5 class="card-title text-center">Fiestas Divinas:</h5>
+            <h6 class="card-title text-center">Próximas fiestas:</h6>
+
+            <h4 class="card-title text-center">Pesaj - Pasar por alto</h4>
+            <br>
+            <!-- <h4 class="card-title text-center">{{ name_parasha }} : {{ sign_parasha }} </h4> -->
+            <!-- <h6 class="card-title text-center">{{ section_haftara }}</h6> -->
+            <h6 class="card-subtitle text-muted text-center">Se celebra el 22 y 23 de Abril de 2024.<br></h6>
+            <!-- <p class="card-text">{{ text_haftara }}</p> -->
+            <!-- <a href="#" class="card-link">Comentarios de la Torah</a> -->
+            <!-- <a href="#" class="card-link">Buscar más</a> -->
           </div>
         </div>
       </div>
@@ -289,27 +208,32 @@
       <div class="barra-navigation fixed-bottom">
         <div class="container container-barra rounded-top" style="background: #EEE4C7;">
           <div class="d-flex flex-wrap align-items-center justify-content-center ">
-            <ul class="nav col-12 col-lg-auto my-2 my-md-0 text-small flex-nowrap justify-content-center">
+            <ul class="nav col-12 col-lg-auto my-2 my-md-0 text-small flex-nowrap justify-content-center text-center" style="margin-bottom: 0px;">
               <li>
-                <a href="" class="nav-link" style="color: #343a40">
-                  <span><ion-icon name="heart-outline"></ion-icon></span>
+                <a href="#haftara-text" class="nav-link" style="color: #343a40">
+                  <span><ion-icon name="library-outline"></ion-icon></span>
+                  <p style="font-size: small; text-align: center; margin: 0px;">Haftará</p>
                 </a>
               </li>
               <li>
-                <a href="" class="nav-link" style="color: #343a40">
+                <a href="#aliya-text" class="nav-link" style="color: #343a40">
                   <span><ion-icon name="bonfire-outline"></ion-icon></span>
+                <p style="font-size: small; text-align: center; margin: 0px;">Aliyá</p>
                 </a>
               </li>
-              <!-- <li>
-                <a href="" class="nav-link">
-                  <span><ion-icon name="calendar-outline"></ion-icon></span>
-                </a>
-              </li> -->
               <li>
+                <a href="#party-info" class="nav-link" style="color: #343a40">
+                  <span><ion-icon name="calendar-outline"></ion-icon></span>
+                  <p style="font-size: small; text-align: center; margin: 0px;">Fiestas</p>
+                </a>
+              </li>
+
+              
+              <!-- <li>
                 <a href="" class="nav-link" style="color: #343a40">
                   <span><ion-icon name="headset-outline"></ion-icon></span>
                 </a>
-              </li>
+              </li> -->
               <!-- <li>
                 <a href="" class="nav-link ">
                   <span><ion-icon name="options-outline"></ion-icon></span>

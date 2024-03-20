@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://bootswatch.com/5/flatly/bootstrap.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" href="static/img/moises.png" />
+
+</head>
+
+<body style="background: #FDFBEF;">
+
+    <div class="container">
+        <div class="card col m-4 text-center">
+            <h2>¡ADVERTENCIA!</h2>
+            <P>Los campos no son requeridos, pero si los campos no estan completos, presentara errores internos.</P>
+            <br>
+            
+            <div>
+                <a href="/">Ir al Inicio</a>
+                <br>
+                <a href="/admin-push">Publicar Parasha</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="container col-md-7 card card-body mt-5">
+            <form method="POST">
+                <div class="mb-3">
+                    <input type="number" class="form-control" name="nroParasha" placeholder="Nro Parasha">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="nameParasha" placeholder="Nombre Parasha">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="signParasha" placeholder="Significado">
+                </div>
+
+                <!-- Aliya text -->
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="section1" placeholder="Sección 1">
+                    <textarea class="form-control mt-1" rows="7" name="aliya1" placeholder="Aliyá 1"></textarea>
+                    <textarea class="form-control mt-1" name="verso1" placeholder="Verso Destacado 1"></textarea>
+                    <input type="text" class="form-control mt-1" name="titleReflection1" placeholder="Titulo de Reflexión 1">
+                    <textarea class="form-control mt-1" rows="7" name="reflection1" placeholder="Reflexión 1"></textarea>
+                    <br>
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="section2" placeholder="Sección 2">
+                    <textarea class="form-control mt-1" rows="7" name="aliya2" placeholder="Aliyá 2"></textarea>
+                    <textarea class="form-control mt-1" name="verso2" placeholder="Verso Destacado 2"></textarea>
+                    <input type="text" class="form-control mt-1" name="titleReflection2" placeholder="Titulo de Reflexión 2">
+                    <textarea class="form-control mt-1" rows="7" name="reflection2" placeholder="Reflexión 2"></textarea>
+                    <br>
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="section3" placeholder="Sección 3">
+                    <textarea class="form-control mt-1" rows="7" name="aliya3" placeholder="Aliyá 3"></textarea>
+                    <textarea class="form-control mt-1" name="verso3" placeholder="Verso Destacado 3"></textarea>
+                    <input type="text" class="form-control mt-1" name="titleReflection3" placeholder="Titulo de Reflexión 3">
+                    <textarea class="form-control mt-1" rows="7" name="reflection3" placeholder="Reflexión 3"></textarea>
+                    <br>
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="section4" placeholder="Sección 4">
+                    <textarea class="form-control mt-1" rows="7" name="aliya4" placeholder="Aliyá 4"></textarea>
+                    <textarea class="form-control mt-1" name="verso4" placeholder="Verso Destacado 4"></textarea>
+                    <input type="text" class="form-control mt-1" name="titleReflection4" placeholder="Titulo de Reflexión 4">
+                    <textarea class="form-control mt-1" rows="7" name="reflection4" placeholder="Reflexión 4"></textarea>
+                    <br>
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="section5" placeholder="Sección 5">
+                    <textarea class="form-control mt-1" rows="7" name="aliya5" placeholder="Aliyá 5"></textarea>
+                    <textarea class="form-control mt-1" name="verso5" placeholder="Verso Destacado 5"></textarea>
+                    <input type="text" class="form-control mt-1" name="titleReflection5" placeholder="Titulo de Reflexión 5">
+                    <textarea class="form-control mt-1" rows="7" name="reflection5" placeholder="Reflexión 5"></textarea>
+                    <br>
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="section6" placeholder="Sección 6">
+                    <textarea class="form-control mt-1" rows="7" name="aliya6" placeholder="Aliyá 6"></textarea>
+                    <textarea class="form-control mt-1" name="verso6" placeholder="Verso Destacado 6"></textarea>
+                    <input type="text" class="form-control mt-1" name="titleReflection6" placeholder="Titulo de Reflexión 6">
+                    <textarea class="form-control mt-1" rows="7" name="reflection6" placeholder="Reflexión 6"></textarea>
+                    <br>
+                </div>
+
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="section7" placeholder="Sección 7">
+                    <textarea class="form-control mt-1" rows="7" name="aliya7" placeholder="Aliyá 7"></textarea>
+                    <textarea class="form-control mt-1" name="verso7" placeholder="Verso Destacado 7"></textarea>
+                    <input type="text" class="form-control mt-1" name="titleReflection7" placeholder="Titulo de Reflexión 7">
+                    <textarea class="form-control mt-1" rows="7" name="reflection7" placeholder="Reflexión 7"></textarea>
+                    <br>
+                </div>
+
+              
+                <!-- Haftara -->
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="sectionHaftara" placeholder="Sección Haftará">
+                    <textarea class="form-control mt-1" rows="7" name="haftara" placeholder="Haftará"></textarea>
+                </div>
+
+                <!-- BUTTON SUBMIT -->
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary float-end">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

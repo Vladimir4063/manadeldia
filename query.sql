@@ -1,31 +1,56 @@
 CREATE TABLE parasha(
-	id INTEGER primary KEY AutoIncrement,
-	nroParasha int,
-	nameParasha varchar(255),
-	aliya1 text,
-	aliya2 text,
-	aliya3 text,
-	aliya4 text,
-	aliya5 text,
-	aliya6 text,
-	aliya7 text
-)
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+	isPublic BOOLEAN,
+    nroParasha INT,
+    nameParasha VARCHAR(255),
+    signParasha VARCHAR(255),
+	section1 VARCHAR(255),
+	section2 VARCHAR(255),
+	section3 VARCHAR(255),
+	section4 VARCHAR(255),
+	section5 VARCHAR(255),
+	section6 VARCHAR(255),
+	section7 VARCHAR(255),
+    aliya1 TEXT,
+    aliya2 TEXT,
+    aliya3 TEXT,
+    aliya4 TEXT,
+    aliya5 TEXT,
+    aliya6 TEXT,
+    aliya7 TEXT,
+    titleReflection1 VARCHAR(255),
+    titleReflection2 VARCHAR(255),
+    titleReflection3 VARCHAR(255),
+    titleReflection4 VARCHAR(255),
+    titleReflection5 VARCHAR(255),
+    titleReflection6 VARCHAR(255),
+    titleReflection7 VARCHAR(255),
+    reflection1 TEXT,
+    reflection2 TEXT,
+    reflection3 TEXT,
+    reflection4 TEXT,
+    reflection5 TEXT,
+    reflection6 TEXT,
+    reflection7 TEXT,
+    sectionHaftara VARCHAR(255),
+    haftara TEXT,
+    verso1 TEXT,
+    verso2 TEXT,
+    verso3 TEXT,
+    verso4 TEXT,
+    verso5 TEXT,
+    verso6 TEXT,
+    verso7 TEXT
+);
 
-INSERT INTO parasha(nroParasha, nameParasha, aliya1, aliya2, aliya3, aliya4, aliya5, aliya6, aliya7) 
-values (5, "Bamidbar", "Primer aliya", "Segunda Aliya", "13 Cuando se aproximaba la Pascua de los judíos, subió Jesús a Jerusalén. 14 Y en el templo halló a los que vendían bueyes, ovejas y palomas, e instalados en sus mesas a los que cambiaban dinero. 15 Entonces, haciendo un látigo de cuerdas, echó a todos del templo, juntamente con sus ovejas y sus bueyes; regó por el suelo las monedas de los que cambiaban dinero y derribó sus mesas. 16 A los que vendían las palomas les dijo:
 
-—¡Saquen esto de aquí! ¿Cómo se atreven a convertir la casa de mi Padre en un mercado?
+-- actualizar parasha isPublic
+UPDATE parasha
+SET isPublic = CASE
+                WHEN id = 11 THEN 1  -- Actualiza el campo id = " " a true
+                ELSE 0
+              END
+WHERE id = 1 OR id NOT IN (SELECT id FROM parasha WHERE id = 1);
 
-17 Sus discípulos se acordaron de que está escrito: «El celo por tu casa me consumirá». 18 Entonces los judíos reaccionaron, preguntándole:
+UPDATE parasha SET isPublic = CASE WHEN nroParasha = 11 THEN 1 ELSE 0 END WHERE nroParasha = 1 OR nroParasha NOT IN (SELECT nroParasha FROM parasha WHERE nroParasha = 1);
 
-—¿Qué señal puedes mostrarnos para actuar de esta manera?
-
-19 —Destruyan este templo —respondió Jesús—, y lo levantaré de nuevo en tres días.
-
-20 —Tardaron cuarenta y seis años en construir este templo, ¿y tú vas a levantarlo en tres días?
-
-21 Pero el templo al que se refería era su propio cuerpo. 22 Así, pues, cuando se levantó de entre los muertos, sus discípulos se acordaron de lo que había dicho, y creyeron en la Escritura y en las palabras de Jesús.
-
-23 Mientras estaba en Jerusalén, durante la fiesta de la Pascua, muchos creyeron en su nombre al ver las señales que hacía. 24 En cambio Jesús no les creía porque los conocía a todos; 25 no necesitaba que nadie le informara nada acerca de los demás, pues él conocía el interior del ser humano.", " Cuarta Aliyá", "Quinta Aliya", "Sexta Aliya", "Septima Aliya")
-
-SELECT aliya3 FROM parasha where nameParasha = "Bamidbar"
