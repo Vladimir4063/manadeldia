@@ -42,7 +42,10 @@ def get_text_aliya():
     connection_DB =connection.cursor()
     connection_DB.execute(query)
     data = connection_DB.fetchone()
-    data_list= list(data)
+    if data:
+        data_list= list(data)
+    else:
+        data_list = ['Test','Test','Test','Test','Test','Test','Test','Test','Test','Test',]
     connection_DB.close()
     return data_list
 
