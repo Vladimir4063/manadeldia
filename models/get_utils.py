@@ -38,6 +38,7 @@ def get_text_aliya():
         + ", sectionHaftara, haftara FROM parasha WHERE isPublic = true"
     )
 
+    print(query)
     connection_DB =connection.cursor()
     connection_DB.execute(query)
     data = connection_DB.fetchone()
