@@ -64,8 +64,5 @@ try:
         connection.commit()
         print("La tabla ha sido creada correctamente.")
 
-    # Cerrar la conexión
-    connection.close()
-
 except Exception as error:
     print(error)
